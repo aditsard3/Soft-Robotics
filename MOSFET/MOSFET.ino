@@ -1,34 +1,37 @@
-int mosfetone = 48;
-int mosfettwo = 50;
-int mosfetthree = 52;
-int mosfetfour = 46;
+int chamberOne = 10;
+int chamberTwo = 11;
+int chamberThree = 12;
+int chamberFour = 13;
 
 void setup() {
   // put your setup code here, to run once:
-pinMode(mosfetone, OUTPUT);
-pinMode(mosfettwo, OUTPUT);
-pinMode(mosfetthree, OUTPUT);
-pinMode(mosfetfour, OUTPUT);
-digitalWrite(mosfetthree, HIGH);
+pinMode(chamberOne, OUTPUT);
+pinMode(chamberTwo, OUTPUT);
+pinMode(chamberThree, OUTPUT);
+pinMode(chamberFour, OUTPUT);
+
 }
 
 void loop() {
   // put your main code here, to run repeatedly:q
-/*  o
-digitalWrite(mosfetone, HIGH);
-delay(2000);
-digitalWrite(mosfetone, LOW);
 
-digitalWrite(mosfettwo, HIGH);
+digitalWrite(chamberOne, HIGH);
 delay(2000);
-digitalWrite(mosfettwo, LOW);
+digitalWrite(chamberOne, LOW);
 
-digitalWrite(mosfetthree, HIGH);
+digitalWrite(chamberTwo, HIGH);
 delay(2000);
-digitalWrite(mosfetthree, LOW);
+digitalWrite(chamberTwo, LOW);
 
-digitalWrite(mosfetfour, HIGH);
+digitalWrite(chamberThree, HIGH);
 delay(2000);
-digitalWrite(mosfetfour, LOW);
-*/
+digitalWrite(chamberThree, LOW);
+
+digitalWrite(chamberFour, HIGH);
+delay(2000);
+digitalWrite(chamberFour, LOW);
+
+
 }
+
+
