@@ -1,7 +1,7 @@
 int sensorValue= A0;
 int sensorPin = 0;        // value read from the pressure sensor via the amplifier stage
 int firstFingerValve = 14;
-//this is a comment
+
 
 void setup() 
 {
