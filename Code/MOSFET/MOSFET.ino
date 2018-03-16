@@ -13,7 +13,7 @@ pinMode(chamberFour, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:q
+  // put your main code here, to run repeatedly
 
 digitalWrite(chamberOne, HIGH);
 delay(2000);
