@@ -1,24 +1,21 @@
-#define LFinger1 25
-#define LFinger2 26
-#define LFinger3 27
-#define LFinger4 28
-#define RFinger1 29
-#define RFinger2 30
-#define RFinger3 31
-#define RFinger4 32
+#define LFinger1 0
+#define LFinger2 1
+#define RFinger1 2
+#define RFinger2 3
+long frameCount;
 
 void setup() {
-  long frameCount;
+  Serial.begin(1000000);
 }
 
 void loop() {
+  activeHandRecording();
 }
 
-void activeHandRecording(int fps) {
-  
-  delay(1000/fps); //Delay at FPS speed
-  for(int i = 0; i < 10; i++) {
-    format(i, analogRead(i + 25), frameCount);
+void activeHandRecording() {
+
+  for(int i = 0; i < 4; i++) {
+    format(i, analogRead(i), frameCount);
   }
   
  frameCount++;
