@@ -15,7 +15,7 @@ void loop() {
 void activeHandRecording() {
 
   for(int i = 0; i < 4; i++) {
-    format(i, analogRead(i), frameCount);
+    format(i, analogRead(i));
   }
   
  frameCount++;
@@ -34,7 +34,7 @@ void activeHandRecording() {
  * FrameCount 0-~15qdr
 */
  
-String format(int fingerNum, int sensorValue, int frameCount) {
+String format(int fingerNum, int sensorValue) {
   
   Serial.print(fingerNum); //Print the finger
   Serial.print("."); //Delimeter
